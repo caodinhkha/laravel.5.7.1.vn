@@ -6,9 +6,13 @@
  * Time: 5:55 CH
  */
 return [
+    'auth'  => [
+        'route'       => [
+            'prefix'     => '/backend',
+            'middleware' => ['web'],
+        ],
+    ],
     'backend'  => [
-        'folder_name' => 'Backend',
-        'slug_name'   => 'backend',
         'route'       => [
             'prefix'     => '/backend',
             'namespace'  => 'Backend',
@@ -16,8 +20,6 @@ return [
         ],
     ],
     'frontend' => [
-        'folder_name' => 'Frontend',
-        'slug_name'   => '',
         'route'       => [
             'prefix'     => '/',
             'namespace'  => 'Frontend',
@@ -25,8 +27,6 @@ return [
         ],
     ],
     'api'      => [
-        'folder_name' => 'Api',
-        'slug_name'   => 'api',
         'route'       => [
             'prefix'     => '/api',
             'namespace'  => 'Api',

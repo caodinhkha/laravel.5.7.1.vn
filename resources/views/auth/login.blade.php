@@ -48,8 +48,8 @@
     Google+</a>
 </div>-->
 <!-- /.social-auth-links -->
-<a class="text-center" href="{{ route('password.request') }}">{{ __('Forgot your password?') }}</a><br>
-<a class="text-center" href="{{ route('register') }}">{{ __('Register') }}</a>
+<!--<a class="text-center" href="{{ route('password.request') }}">{{ __('Forgot your password?') }}</a><br>
+<a class="text-center" href="{{ route('register') }}">{{ __('Register') }}</a>-->
 </div>
 <!-- /.login-box-body -->
 @endsection

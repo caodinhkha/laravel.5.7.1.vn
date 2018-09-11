@@ -11,12 +11,15 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/home', 'HomeController@index')->name('home');
-Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');*/
+Route::group(config('module.auth.route'),function() {
+    Auth::routes();
+});
 Route::group(config('module.backend.route'),function(){
     //Dashboard
     Route::get('/','IndexController@index');
+    Route::get('/users','UserController@index');
 });
