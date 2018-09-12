@@ -9,14 +9,14 @@ return [
     'auth'  => [
         'route'       => [
             'prefix'     => '/backend',
-            'middleware' => ['auth'],
+            'middleware' => ['web'],
         ],
     ],
     'backend'  => [
         'route'       => [
             'prefix'     => '/backend',
             'namespace'  => 'Backend',
-            'middleware' => ['auth'],
+            'middleware' => ['web'],
         ],
     ],
     'frontend' => [
