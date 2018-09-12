@@ -21,5 +21,8 @@ Route::group(config('module.auth.route'),function() {
 Route::group(config('module.backend.route'),function(){
     //Dashboard
     Route::get('/','IndexController@index');
-    Route::get('/users','UserController@index');
+    Route::resource('users', 'UserController');
+    Route::resource('roles', 'RoleController');
+    Route::resource('posts', 'PostController');
+    Route::resource('permissions','PermissionController');
 });

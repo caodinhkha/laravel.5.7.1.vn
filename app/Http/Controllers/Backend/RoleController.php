@@ -4,14 +4,15 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\User;
 use App\Models\Role;
 use App\Models\Permission;
 
-class UserController extends Controller
+class RoleController extends Controller
 {
     /**
-     * UserController constructor.
+     * Create a new controller instance.
+     *
+     * @return void
      */
     public function __construct()
     {
@@ -25,8 +26,8 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::latest()->paginate();
-        return view('backend.user.index', compact('users'));
+        $roles = Role::all();
+        return view('backend.role.index',compact('roles'));
     }
 
     /**
@@ -36,8 +37,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        $roles = Role::get();
-        return view('backend.user.create', compact('roles'));
+        $permissions = Permission::all();//Get all permissions
+        return view('backend.role.create', compact('permissions'));
     }
 
     /**
@@ -49,16 +50,17 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:6|confirmed',
-            'roles' => 'required'
-        ]);
-        $user = User::create($request->except('roles'));
-        if($request->roles <> ''){
-            $user->roles()->attach($request->roles);
+                'name'=>'required|unique:roles|max:10',
+                'permissions' =>'required',
+            ]
+        );
+        $role = new Role();
+        $role->name = $request->name;
+        $role->save();
+        if($request->permissions <> ''){
+            $role->permissions()->attach($request->permissions);
         }
-        return redirect()->route('backend.user.index')->with('success','User has been created');
+        return redirect()->route('backend.role.index')->with('success','Roles added successfully');
     }
 
     /**
@@ -80,9 +82,9 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = User::findOrFail($id);
-        $roles = Role::get();
-        return view('backend.user.edit', compact('user', 'roles'));
+        $role = Role::findOrFail($id);
+        $permissions = Permission::all();
+        return view('backend.role.edit', compact('role', 'permissions'));
     }
 
     /**
@@ -94,21 +96,18 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $user = User::findOrFail($id);
+        $role = Role::findOrFail($id);//Get role with the given id
+        //Validate name and permission fields
         $this->validate($request, [
-            'name'=>'required|max:120',
-            'email'=>'required|email|unique:users,email,'.$id,
-            'password'=>'required|min:6|confirmed'
+            'name'=>'required|max:10|unique:roles,name,'.$id,
+            'permissions' =>'required',
         ]);
-        $input = $request->except('roles');
-        $user->fill($input)->save();
-        if ($request->roles <> '') {
-            $user->roles()->sync($request->roles);
+        $input = $request->except(['permissions']);
+        $role->fill($input)->save();
+        if($request->permissions <> ''){
+            $role->permissions()->sync($request->permissions);
         }
-        else {
-            $user->roles()->detach();
-        }
-        return redirect()->route('backend.user.index')->with('success', 'User successfully updated.');
+        return redirect()->route('backend.role.index')->with('success','Roles updated successfully');
     }
 
     /**
@@ -119,8 +118,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::findOrFail($id);
-        $user->delete();
-        return redirect()->route('backend.user.inde')->with('success', 'User successfully deleted.');
+        $role = Role::findOrFail($id);
+        $role->delete();
+        return redirect()->route('backend.role.index')->with('success', 'Role deleted successfully!');
     }
 }

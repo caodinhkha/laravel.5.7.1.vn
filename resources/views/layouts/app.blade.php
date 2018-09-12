@@ -9,11 +9,14 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css") }}">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css") }}">
     <!-- Ionicons -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/Ionicons/css/ionicons.min.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/Ionicons/css/ionicons.min.css") }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/dist/css/AdminLTE.min.css") }}">
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -22,13 +25,17 @@
     <!-- Morris chart -->
     <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/morris.js/morris.css") }}">
     <!-- jvectormap -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/jvectormap/jquery-jvectormap.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/jvectormap/jquery-jvectormap.css") }}">
     <!-- Date Picker -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css") }}">
     <!-- Daterange picker -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/bootstrap-daterangepicker/daterangepicker.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/bootstrap-daterangepicker/daterangepicker.css") }}">
     <!-- bootstrap wysihtml5 - text editor -->
-    <link rel="stylesheet" href="{{ asset("/static/backend/AdminLTE-2.4.5/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css") }}">
+    <link rel="stylesheet"
+          href="{{ asset("/static/backend/AdminLTE-2.4.5/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css") }}">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,14 +45,15 @@
     <![endif]-->
 
     <!-- Google Font -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
 
     <header class="main-header">
         <!-- Logo -->
-        <a href="index2.html" class="logo">
+        <a href="/backend" class="logo">
             <!-- mini logo for sidebar mini 50x50 pixels -->
             <span class="logo-mini"><b>A</b>LT</span>
             <!-- logo for regular state and mobile devices -->
@@ -74,7 +82,8 @@
                                     <li><!-- start message -->
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image">
+                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}"
+                                                     class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Support Team
@@ -87,7 +96,8 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user3-128x128.jpg") }}" class="img-circle" alt="User Image">
+                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user3-128x128.jpg") }}"
+                                                     class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 AdminLTE Design Team
@@ -99,7 +109,8 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user4-128x128.jpg") }}" class="img-circle" alt="User Image">
+                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user4-128x128.jpg") }}"
+                                                     class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Developers
@@ -111,7 +122,8 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user3-128x128.jpg") }}" class="img-circle" alt="User Image">
+                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user3-128x128.jpg") }}"
+                                                     class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Sales Department
@@ -123,7 +135,8 @@
                                     <li>
                                         <a href="#">
                                             <div class="pull-left">
-                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user4-128x128.jpg") }}" class="img-circle" alt="User Image">
+                                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user4-128x128.jpg") }}"
+                                                     class="img-circle" alt="User Image">
                                             </div>
                                             <h4>
                                                 Reviewers
@@ -155,7 +168,8 @@
                                     </li>
                                     <li>
                                         <a href="#">
-                                            <i class="fa fa-warning text-yellow"></i> Very long description here that may not fit into the
+                                            <i class="fa fa-warning text-yellow"></i> Very long description here that
+                                                                                      may not fit into the
                                                                                       page and may cause design problems
                                         </a>
                                     </li>
@@ -197,7 +211,8 @@
                                                 <small class="pull-right">20%</small>
                                             </h3>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar"
+                                                <div class="progress-bar progress-bar-aqua" style="width: 20%"
+                                                     role="progressbar"
                                                      aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                                     <span class="sr-only">20% Complete</span>
                                                 </div>
@@ -212,7 +227,8 @@
                                                 <small class="pull-right">40%</small>
                                             </h3>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-green" style="width: 40%" role="progressbar"
+                                                <div class="progress-bar progress-bar-green" style="width: 40%"
+                                                     role="progressbar"
                                                      aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                                     <span class="sr-only">40% Complete</span>
                                                 </div>
@@ -227,7 +243,8 @@
                                                 <small class="pull-right">60%</small>
                                             </h3>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-red" style="width: 60%" role="progressbar"
+                                                <div class="progress-bar progress-bar-red" style="width: 60%"
+                                                     role="progressbar"
                                                      aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                                     <span class="sr-only">60% Complete</span>
                                                 </div>
@@ -242,7 +259,8 @@
                                                 <small class="pull-right">80%</small>
                                             </h3>
                                             <div class="progress xs">
-                                                <div class="progress-bar progress-bar-yellow" style="width: 80%" role="progressbar"
+                                                <div class="progress-bar progress-bar-yellow" style="width: 80%"
+                                                     role="progressbar"
                                                      aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
                                                     <span class="sr-only">80% Complete</span>
                                                 </div>
@@ -260,13 +278,15 @@
                     <!-- User Account: style can be found in dropdown.less -->
                     <li class="dropdown user user-menu">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}" class="user-image" alt="User Image">
+                            <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}"
+                                 class="user-image" alt="User Image">
                             <span class="hidden-xs">{{ Auth::user()->name }}</span>
                         </a>
                         <ul class="dropdown-menu">
                             <!-- User image -->
                             <li class="user-header">
-                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image">
+                                <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}"
+                                     class="img-circle" alt="User Image">
 
                                 <p>
                                     {{ Auth::user()->name }} - Web Developer
@@ -294,8 +314,11 @@
                                     <a href="#" class="btn btn-default btn-flat">Profile</a>
                                 </div>
                                 <div class="pull-right">
-                                    <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" {{ __('Logout') }} class="btn btn-default btn-flat">Sign out</a>
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
+                                       {{ __('Logout') }} class="btn btn-default btn-flat">Sign out</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                          style="display: none;">
                                         @csrf
                                     </form>
                                 </div>
@@ -317,7 +340,8 @@
             <!-- Sidebar user panel -->
             <div class="user-panel">
                 <div class="pull-left image">
-                    <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}" class="img-circle" alt="User Image">
+                    <img src="{{ asset("/static/backend/AdminLTE-2.4.5/dist/img/user2-160x160.jpg") }}"
+                         class="img-circle" alt="User Image">
                 </div>
                 <div class="pull-left info">
                     <p>{{ Auth::user()->name }}</p>
@@ -337,8 +361,20 @@
             <!-- /.search form -->
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu" data-widget="tree">
-                <li class="header">MAIN NAVIGATION</li>
                 <li class="active treeview">
+                    <a href="#">
+                        <i class="fa fa-cog"></i> <span>System</span>
+                        <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li class="active"><a href="{{ route('users.index') }}"><i class="fa fa-angle-right"></i>Users</a></li>
+                        <li><a href="{{ route('roles.index') }}"><i class="fa fa-angle-right"></i>Roles</a></li>
+                        <li><a href="{{ route('permissions.index') }}"><i class="fa fa-angle-right"></i>Permissions</a></li>
+                    </ul>
+                </li>
+                <li class="treeview">
                     <a href="#">
                         <i class="fa fa-dashboard"></i> <span>Dashboard</span>
                         <span class="pull-right-container">
@@ -346,7 +382,7 @@
             </span>
                     </a>
                     <ul class="treeview-menu">
-                        <li class="active"><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
+                        <li><a href="index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
                         <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
                     </ul>
                 </li>
@@ -362,7 +398,9 @@
                         <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
                         <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
                         <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
-                        <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>
+                        <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed
+                                                                                                         Sidebar</a>
+                        </li>
                     </ul>
                 </li>
                 <li>
@@ -414,7 +452,8 @@
                     </a>
                     <ul class="treeview-menu">
                         <li><a href="pages/forms/general.html"><i class="fa fa-circle-o"></i> General Elements</a></li>
-                        <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a></li>
+                        <li><a href="pages/forms/advanced.html"><i class="fa fa-circle-o"></i> Advanced Elements</a>
+                        </li>
                         <li><a href="pages/forms/editors.html"><i class="fa fa-circle-o"></i> Editors</a></li>
                     </ul>
                 </li>

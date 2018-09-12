@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('title', '| Users Management')
+@section('title', '| Roles Management')
 @section('content')
     <div class="row">
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
-                    <h3 class="box-title">Users Management</h3>
+                    <h3 class="box-title">Roles Management</h3>
                 </div>
                 <!-- /.box-header -->
                 <div class="box-body">
@@ -18,35 +18,33 @@
                         <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Full name</th>
-                            <th>Email</th>
-                            <th>Date</th>
+                            <th>Role</th>
+                            <th>Permissions</th>
                             <th>Action</th>
                         </tr>
                         </thead>
                         <tbody>
-                        @foreach ($users as $user)
+                        @foreach ($roles as $role)
                             <tr>
-                                <td>{{$user->id}}</td>
-                                <td>{{ $user->name }}</td>
-                                <td>{{ $user->email }}</td>
-                                <td>{{ $user->created_at->format('H:i:s d/m/Y') }}</td>
-                                <th>
-                                    <a href="{{ route('users.edit', $user->id) }}" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit">
+                                <td>{{ $role->id }}</td>
+                                <td>{{ $role->name }}</td>
+                                <td>{{ str_replace(array('[',']','"'),'', $role->permissions()->pluck('name')) }}</td>
+                                <td>
+                                    <a href="{{ route('roles.edit', $role->id) }}" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <a class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Delete">
-                                        <i class="fa fa-trash-o"></i>
-                                    </a>
-                                </th>
+                                    {!! Form::open(['method' => 'DELETE', 'route' => ['roles.destroy', $role->id] ]) !!}
+                                    {!! Form::submit('Delete', ['class' => 'btn btn-icon btn-sm btn-primary', 'data-toggle' => 'tooltip', 'data-original-title' => 'Delete']) !!}
+                                    {!! Form::close() !!}
+                                </td>
                             </tr>
                         @endforeach
                         </tbody>
                         <tfoot>
                         <tr>
                             <th>ID</th>
-                            <th>Full name</th>
-                            <th>Email</th>
+                            <th>Role</th>
+                            <th>Permissions</th>
                             <th>Action</th>
                         </tr>
                         </tfoot>
