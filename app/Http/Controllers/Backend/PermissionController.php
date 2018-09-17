@@ -83,6 +83,7 @@ class PermissionController extends Controller
      */
     public function edit($id)
     {
+        $permission = Permission::findOrFail($id);
         return view('backend.permission.edit', compact('permission'));
     }
 

@@ -10,7 +10,7 @@
                 <!-- /.box-header -->
                 <div class="box-body">
                     <div class="btn-group pull-right">
-                        <a class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit">
+                        <a href="{{ route('roles.create') }}" class="btn btn-icon btn-sm btn-primary" data-toggle="tooltip" data-original-title="Edit">
                             <i class="fa fa-plus"></i> Create
                         </a>
                     </div>
@@ -60,5 +60,5 @@
     <!-- DataTables -->
     <script src="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/datatables.net/js/jquery.dataTables.min.js") }}"></script>
     <script src="{{ asset("/static/backend/AdminLTE-2.4.5/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js") }}"></script>
-    <script src="{{ asset("/static/backend/js/users/index.js") }}"></script>
+    <script src="{{ asset("/static/backend/js/roles/index.js") }}"></script>
 @endsection

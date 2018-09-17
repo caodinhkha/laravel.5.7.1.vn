@@ -2,12 +2,11 @@
 @section('title', '| Update User')
 @section('content')
     <div class="row">
-        {!! Form::open(array('url' => 'users')) !!}
+        {{ Form::model($user, array('route' => array('users.update', $user->id), 'method' => 'PUT')) }}
         <div class="col-xs-9">
             <div class="box">
                 <!-- /.box-header -->
                 <div class="box-body">
-                    {{ Form::model($user, array('route' => array('users.update', $user->id), 'method' => 'PUT')) }}
                     <div class="form-group @if ($errors->has('name')) has-error @endif">
                         {{ Form::label('name', 'Name') }}
                         {{ Form::text('name', null, array('class' => 'form-control')) }}

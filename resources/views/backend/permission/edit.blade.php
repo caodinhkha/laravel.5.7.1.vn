@@ -1,16 +1,33 @@
 @extends('layouts.app')
 @section('title', '| Update Permission')
 @section('content')
-    <div class='col-md-4 col-md-offset-4'>
-        <h1><i class='fa fa-key'></i> Update {{$permission->name}}</h1>
-        <br>
+    <div class="row">
         {{ Form::model($permission, array('route' => array('permissions.update', $permission->id), 'method' => 'PUT')) }}
-        <div class="form-group">
-            {{ Form::label('name', 'Permission Name') }}
-            {{ Form::text('name', null, array('class' => 'form-control')) }}
+        <div class="col-xs-9">
+            <div class="box">
+                <!-- /.box-header -->
+                <div class="box-body">
+                    <div class="form-group">
+                        {{ Form::label('name', 'Permission Name') }}
+                        {{ Form::text('name', null, array('class' => 'form-control')) }}
+                    </div>
+                </div>
+                <!-- /.box-body -->
+            </div>
+            <!-- /.box -->
         </div>
-        <br>
-        {{ Form::submit('Update', array('class' => 'btn btn-primary')) }}
-        {{ Form::close() }}
+        <!-- /.col -->
+        <div class="col-md-3 right-sidebar">
+            <div class="box">
+                <div class="box-header">
+                    <h3 class="box-title">Publish</h3>
+                </div>
+                <div class="box-body">
+                    {!! Form::submit('Save', array('class' => 'btn btn-primary')) !!}
+                </div>
+            </div>
+        </div>
+        {!! Form::close() !!}
     </div>
+    <!-- /.row -->
 @endsection
