@@ -14,20 +14,30 @@
     <link rel="stylesheet" href="{{ asset("/static/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css") }}">
     <!-- Pushy CSS -->
     <link rel="stylesheet" href="{{ asset("/static/frontend/css/style.css") }}">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
 <body>
 <!-- HEADER -->
 <header>
-    <div class="container">
-        <div class="pull-right">
-            <ul class="header-btns">
-                <!-- Mobile nav toggle-->
-                <li class="nav-toggle">
-                    <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
-                </li>
-                <!-- / Mobile nav toggle -->
-            </ul>
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="pull-right">
+                <ul class="header-btns">
+                    <!-- Mobile nav toggle-->
+                    <li class="nav-toggle">
+                        <button class="nav-toggle-btn main-btn icon-btn"><i class="fa fa-bars"></i></button>
+                    </li>
+                    <!-- / Mobile nav toggle -->
+                </ul>
+            </div>
         </div>
+    <!-- header -->
     </div>
 </header>
 <!-- /HEADER -->

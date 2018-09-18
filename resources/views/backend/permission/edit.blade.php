@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.backend.app')
 @section('title', '| Update Permission')
 @section('content')
     <div class="row">

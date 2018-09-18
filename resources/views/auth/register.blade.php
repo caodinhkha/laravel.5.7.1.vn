@@ -1,4 +1,4 @@
-@extends('layouts.auth')
+@extends('layouts.backend.auth')
 
 @section('content')
 <div class="register-box-body">

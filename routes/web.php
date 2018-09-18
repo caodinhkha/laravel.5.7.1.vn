@@ -18,6 +18,10 @@ Route::get('/home', 'HomeController@index')->name('home');*/
 Route::group(config('module.auth.route'),function() {
     Auth::routes();
 });
+Route::group(config('module.frontend.route'),function(){
+    //Dashboard
+    Route::get('/','IndexController@index');
+});
 Route::group(config('module.backend.route'),function(){
     //Dashboard
     Route::get('/','IndexController@index');
