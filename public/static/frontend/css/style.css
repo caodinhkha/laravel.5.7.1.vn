@@ -285,14 +285,21 @@ hr {
 }
 
 @media only screen and (max-width: 991px) {
+    #header {
+        background: #30323A;
+    }
+    #header .container {
+        padding: 0px 10px 0px 10px;
+    }
     #header .nav-toggle {
         display: inline-block;
+        min-height: 30px;
     }
     header .pull-left, header .pull-right {
         float: none !important;
     }
     header .pull-right {
-        margin-top: 10px;
+        margin: 10px 0px 10px 0px;
     }
     #responsive-nav {
         position: fixed;
