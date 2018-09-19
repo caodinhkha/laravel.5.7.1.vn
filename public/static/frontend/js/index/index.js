@@ -10,7 +10,6 @@
     });
 
     $(document).click(function (event) {
-        console.log($(event.target).closest(responsiveNav).length);
         if (!$(event.target).closest(responsiveNav).length) {
             if (responsiveNav.hasClass('open')) {
                 responsiveNav.removeClass('open');

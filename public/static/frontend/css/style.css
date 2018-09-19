@@ -295,6 +295,9 @@ hr {
         display: inline-block;
         min-height: 30px;
     }
+    #header .header-btns {
+        color: #fff;
+    }
     header .pull-left, header .pull-right {
         float: none !important;
     }
