@@ -86,7 +86,6 @@ ul.dropdown-menu{
     background:#000 none repeat scroll 0 0 !important;
     padding: 0;
     border: none;
-    z-index: 99999999 !important;
 }
 ul.dropdown-menu li a{
     border-left: none !important;
