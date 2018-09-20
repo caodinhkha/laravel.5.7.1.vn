@@ -259,3 +259,155 @@ ul.navbar-nav li a{
     position: static;
     margin: 15px 0px;
 }
+
+/*----------------------------*\
+	Sections
+\*----------------------------*/
+
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-grey {
+    background: #F6F7F8;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.section-title .title {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1.5px;
+    height: 3px;
+    width: 60px;
+    background-color: #F8694A;
+}
+
+/*----------------------------*\
+	Single product
+\*----------------------------*/
+
+.product.product-single {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.product.product-single:hover {
+    -webkit-box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.175);
+    box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.175);
+    -webkit-transform: translateY(-4px);
+    -ms-transform: translateY(-4px);
+    transform: translateY(-4px);
+}
+
+.product.product-single .product-thumb {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.product.product-single .product-thumb>img {
+    width: 100%;
+}
+
+.product.product-single .product-thumb:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 0;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.product.product-single:hover .product-thumb:after {
+    opacity: 0.7;
+    visibility: visible;
+}
+
+.product.product-single .product-label {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.product.product-single .product-label>span {
+    display: block;
+}
+
+.product.product-single .product-countdown {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+}
+
+.product.product-single .product-body {
+    padding: 15px;
+}
+
+.product.product-single .product-price {
+    display: inline-block;
+}
+
+.product.product-single .product-rating {
+    float: right;
+    margin-top: 5px;
+}
+
+.product.product-single .product-name {
+    font-size: 16px;
+}
+
+/*=========================================================
+	12 -> RESPONSIVE
+===========================================================*/
+
+@media only screen and (max-width: 991px) {
+    #home .home-wrap {
+        margin-left: 0px;
+    }
+    #aside {
+        margin-bottom: 60px;
+    }
+    .product-reviews {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner h1 {
+        font-size: 36px;
+    }
+    .store-filter .pull-right, .store-filter .pull-left {
+        float: none !important;
+    }
+    .store-filter .pull-right {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    [class*='col-xs'] {
+        width: 100%;
+    }
+}
