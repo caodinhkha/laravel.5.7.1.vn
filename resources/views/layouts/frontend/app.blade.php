@@ -57,6 +57,7 @@
     <div class="site-overlay"></div>
     <!-- Your Content -->
     <div id="container">
+        <!-- section -->
         <div class="section mobile-menu">
             <header id="header">
                 <!-- Menu Button -->
@@ -64,6 +65,9 @@
                 <img height="50px" src="http://thoitrangsaigon.vn/static/fe/images/mobile_logo.png">
             </header>
         </div>
+        <!-- /section -->
+
+        <!-- section -->
         <div class="section desktop-menu">
             <div class="container">
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -96,6 +100,9 @@
                 </div>
             </div>
         </div>
+        <!-- /section -->
+
+        <!-- section -->
         <div class="section content-wrapper">
             <div class="container">
                 <!-- home slick -->
@@ -129,6 +136,8 @@
                 <!-- /home slick -->
             </div>
         </div>
+        <!-- /section -->
+
         <!-- section -->
         <div class="section">
             <!-- container -->
@@ -174,6 +183,7 @@
             <!-- /container -->
         </div>
         <!-- /section -->
+
         <!-- section -->
         <div class="section">
             <!-- container -->
@@ -271,6 +281,52 @@
                         </div>
                     </div>
                     <!-- /Product Single -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /section -->
+
+        <!-- section -->
+        <div class="section section-grey">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <!-- banner -->
+                    <div class="col-md-8">
+                        <div class="banner banner-1">
+                            <img src="{{ asset("/static/frontend/img/banner13.jpg") }}" alt="">
+                            <div class="banner-caption text-center">
+                                <h1 class="primary-color">HOT DEAL<br><span class="white-color font-weak">Up to 50% OFF</span></h1>
+                                <button class="primary-btn">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /banner -->
+
+                    <!-- banner -->
+                    <div class="col-md-4 col-sm-6">
+                        <a class="banner banner-1" href="#">
+                            <img src="{{ asset("/static/frontend/img/banner11.jpg") }}" alt="">
+                            <div class="banner-caption text-center">
+                                <h2 class="white-color">NEW COLLECTION</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /banner -->
+
+                    <!-- banner -->
+                    <div class="col-md-4 col-sm-6">
+                        <a class="banner banner-1" href="#">
+                            <img src="{{ asset("/static/frontend/img/banner12.jpg") }}" alt="">
+                            <div class="banner-caption text-center">
+                                <h2 class="white-color">NEW COLLECTION</h2>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- /banner -->
                 </div>
                 <!-- /row -->
             </div>

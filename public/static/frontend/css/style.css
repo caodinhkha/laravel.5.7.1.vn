@@ -150,6 +150,9 @@ ul.navbar-nav li a{
         position: fixed;
         width: 100%;
     }
+    .content-wrapper {
+        padding-top: 0px;
+    }
     #home-slick {
         margin-top: 50px;
     }
@@ -265,8 +268,8 @@ ul.navbar-nav li a{
 \*----------------------------*/
 
 .section {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 
 .section-grey {
