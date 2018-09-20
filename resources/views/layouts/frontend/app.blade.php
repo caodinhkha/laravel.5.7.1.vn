@@ -32,7 +32,7 @@
                 <li class="pushy-link"><a href="#">Trang chủ</a></li>
                 <li class="pushy-link"><a href="#">Giới thiệu</a></li>
                 <li class="pushy-submenu">
-                    <a href="#">Nam</a>
+                    <a href="#">Thời trang nam</a>
                     <ul>
                         <li class="pushy-link"><a href="#">Quần</a></li>
                         <li class="pushy-link"><a href="#">Áo</a></li>
@@ -40,14 +40,15 @@
                     </ul>
                 </li>
                 <li class="pushy-submenu">
-                    <a href="#">Nữ</a>
+                    <a href="#">Thời trang nữ</a>
                     <ul>
                         <li class="pushy-link"><a href="#">Quần</a></li>
                         <li class="pushy-link"><a href="#">Áo</a></li>
                         <li class="pushy-link end"><a href="#">Phụ kiện</a></li>
                     </ul>
                 </li>
-                <li class="pushy-link"><a href="#">Giảm giá</a></li>
+                <li class="pushy-link"><a href="#">Khuyến mãi</a></li>
+                <li class="pushy-link"><a href="#">Hướng dẫn</a></li>
                 <li class="pushy-link"><a href="#">Tin tức</a></li>
                 <li class="pushy-link"><a href="#">Liên hệ</a></li>
             </ul>
@@ -76,7 +77,7 @@
                         <li><a href="http://thoitrangsaigon.vn" title="Trang chủ">Trang chủ</a></li>
                         <li><a href="http://thoitrangsaigon.vn" title="Trang chủ">Giới thiệu</a></li>
                         <li>
-                            <a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao" title="Giới sao">Nam</a>
+                            <a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao" title="Giới sao">Thời trang nam</a>
                             <ul class="dropdown-menu sub-ul">
                                 <li class="first"><a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao/trong-nuoc" title="Trong nước">Quần</a></li>
                                 <li><a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao/quoc-te" title="Quốc tế">Áo</a></li>
@@ -84,16 +85,15 @@
                             </ul>
                         </li>
                         <li>
-                            <a  href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao" title="Giới sao">Nữ</a>
+                            <a  href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao" title="Giới sao">Thời trang nữ</a>
                             <ul class="dropdown-menu sub-ul">
                                 <li class="first"><a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao/trong-nuoc" title="Trong nước">Quần</a></li>
                                 <li><a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao/quoc-te" title="Quốc tế">Áo</a></li>
                                 <li><a href="http://thoitrangsaigon.vn/tin-tuc/gioi-sao/quoc-te" title="Quốc tế">Phụ kiên</a></li>
                             </ul>
                         </li>
-                        <li>
-                            <a href="http://thoitrangsaigon.vn/tin-tuc/video" title="Video">Giảm giá</a>
-                        </li>
+                        <li><a href="http://thoitrangsaigon.vn/tin-tuc/video" title="Video">Khuyến mãi</a></li>
+                        <li><a href="http://thoitrangsaigon.vn/tin-tuc/video" title="Video">Hướng dẫn</a></li>
                         <li><a href="https://www.facebook.com/AdevaDongNai.Vn/" title="Shop">Tin tức</a></li>
                         <li><a href="https://www.facebook.com/AdevaDongNai.Vn/" title="Shop">Liên hệ</a></li>
                     </ul>
