@@ -16,7 +16,7 @@
 }
 .pushy a {
   display: block;
-  color: #b3b3b1;
+  color: #ffffff;
   padding: 15px 30px;
   text-decoration: none;
     line-height: 20px;
@@ -25,7 +25,7 @@
     line-height: 20px;
 }
 .pushy a:hover {
-  color: #FFF;
+    color: #FFF;
     background: #FF0000;
 }
 .pushy ul:first-child {
@@ -126,13 +126,21 @@
     opacity: 1;
   }
 }
+.pushy-content ul li > a {
+    text-transform: uppercase;
+}
 /* Submenu Appearance */
-.pushy-submenu {
+.pushy-submenu, .pushy-link {
   /* Submenu Buttons */
+    border-bottom: 1px solid rgba(92,92,92,.23);
   /* Submenu Icon */
+}
+li.pushy-link.end {
+    border-bottom: none !important;
 }
 .pushy-submenu ul {
   padding-left: 15px;
+    padding-right: 15px;
   transition: max-height 0.2s ease-in-out, visibility 0.2s ease-in-out;
 }
 .pushy-submenu ul .pushy-link {

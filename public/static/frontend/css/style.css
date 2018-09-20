@@ -9,7 +9,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #30323A;
+    color: #000000;
     margin: 0 0 10px;
     font-weight: 700;
 }
@@ -21,7 +21,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #F8694A;
+    color: #ffffff;
     text-decoration: none;
     outline: none;
 }
@@ -29,6 +29,15 @@ ul,li {
     margin: 0px;
     padding: 0px;
     list-style-type: none;
+}
+.primary-color {
+    color: #F8694A;
+}
+.white-color {
+    color: #FFF;
+}
+.font-weak {
+    font-weight: 400;
 }
 #header{height: 50px; background: #000000;}
 .menu-btn {
@@ -58,41 +67,45 @@ ul.navbar-nav li:hover ul.dropdown-menu{
     display: block !important;
 }
 ul.navbar-nav li a:hover{
-    background: #FF0000 none repeat scroll 0 0 !important;
+    background: #000 none repeat scroll 0 0 !important;
+    border-bottom: 2px solid #FF0000;
+    height: 48px;
 }
 ul.navbar-nav li.active a{
     background: none !important;
 }
  .navbar-nav > .active > a, .navbar-nav > .active > a:focus, .navbar-nav > .active > a:hover{
     color: #ffffff !important;
-    background: #FF0000 none repeat scroll 0 0 !important;
+    background: #000 none repeat scroll 0 0 !important;
 }
 .navbar-nav > li > a{
     color: #FFFFFF !important;
+    text-transform: uppercase;
 }
 ul.dropdown-menu{
-    background:#FF0000 none repeat scroll 0 0 !important;
+    background:#000 none repeat scroll 0 0 !important;
     padding: 0;
+    border: none;
+    z-index: 99999999 !important;
 }
 ul.dropdown-menu li a{
     border-left: none !important;
     color: #ffffff !important;
-    padding: 0px 10px 0px 10px !important;
+    padding: 0px 20px 0px 20px !important;
+    line-height: 30px;
+}
+ul.dropdown-menu li a:hover{
+    border-bottom: none !important;
+    background: #FF0000 !important;
 }
 ul.dropdown-menu li{
     padding: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 1px solid rgba(92,92,92,.23);
     display: inline-block;
-    line-height: 18px;
     width: 100%;
 }
 ul.dropdown-menu li.first{
     border: none !important;
-}
-ul.dropdown-menu > li:hover {
-
-    background:#FF0000 none repeat scroll 0 0 !important;
-    color: #FFF !important;
 }
 .dropdown-menu > li > a
 {
@@ -105,7 +118,145 @@ ul.navbar-nav{
 ul.navbar-nav li a{
     color: #fff;
     display: block;
-    font: 700 12px/30px arial;
-    height: 30px;
+    line-height: 50px;
     padding: 0 23px;
+    text-transform: uppercase;
+}
+#container {
+    position: relative;
+    width: 100%;
+}
+/* Mobile and tablet */
+@media (min-width: 320px) and (max-width:768px) {
+    .desktop-menu {
+        display: none;
+    }
+    .mobile-menu {
+        position: fixed;
+        width: 100%;
+    }
+    .content-wrapper {
+        padding-top: 50px;
+    }
+    #home-slick {
+        margin-top: 15px;
+    }
+}
+/*Desktop*/
+@media (min-width: 769px) {
+    .mobile-menu {
+        display: none;
+    }
+    .desktop-menu {
+        position: fixed;
+        width: 100%;
+    }
+    #home-slick {
+        margin-top: 50px;
+    }
+}
+/*=========================================================
+	04 -> BANNERS
+===========================================================*/
+
+.banner {
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.banner>img {
+    width: 100%;
+}
+
+.banner.banner-1 .banner-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.banner.banner-2 .banner-caption {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+}
+
+.banner h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+}
+
+/*=========================================================
+	05 -> HOME SLIDER
+===========================================================*/
+
+#home-slick .banner {
+    margin: 0px;
+}
+/*=========================================================
+	11 -> SLICK
+===========================================================*/
+/*----------------------------*\
+	Arrows
+\*----------------------------*/
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    background: #30323A;
+    z-index: 22;
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background: #F8694A;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #FFF;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.custom-nav .slick-prev, .custom-nav .slick-next {
+    display: inline-block;
+    position: static;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+/*----------------------------*\
+	Dots
+\*----------------------------*/
+
+.slick-dots li, .slick-dots li button, .slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button:before {
+    content: "";
+    opacity: 1;
+    background: #DADADA;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #F8694A;
+}
+
+.custom-dots .slick-dots {
+    position: static;
+    margin: 15px 0px;
 }
