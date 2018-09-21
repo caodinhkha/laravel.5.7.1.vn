@@ -4,9 +4,18 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Post;
 
 class PostController extends Controller
 {
+    /**
+     * UserController constructor.
+     */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +23,8 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $posts = Post::latest()->paginate();
+        return view('frontend.post.index', compact('posts'));
     }
 
     /**
@@ -24,7 +34,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('frontend.post.create');
     }
 
     /**
