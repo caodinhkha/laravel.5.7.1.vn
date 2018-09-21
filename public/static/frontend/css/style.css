@@ -21,7 +21,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     outline: none;
 }
@@ -133,9 +133,10 @@ ul.navbar-nav li a{
     .mobile-menu {
         position: fixed;
         width: 100%;
+        z-index: 1;
     }
     .content-wrapper {
-        padding-top: 50px;
+        padding-top: 50px !important;
     }
     #home-slick {
         margin-top: 15px;
@@ -149,6 +150,7 @@ ul.navbar-nav li a{
     .desktop-menu {
         position: fixed;
         width: 100%;
+        z-index: 1;
     }
     .content-wrapper {
         padding-top: 0px;
@@ -307,15 +309,16 @@ ul.navbar-nav li a{
     margin-bottom: 15px;
     -webkit-transition: 0.3s all;
     transition: 0.3s all;
+    cursor: pointer;
 }
 
-.product.product-single:hover {
+/*.product.product-single:hover {
     -webkit-box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.175);
     box-shadow: 0px 6px 10px -6px rgba(0, 0, 0, 0.175);
     -webkit-transform: translateY(-4px);
     -ms-transform: translateY(-4px);
     transform: translateY(-4px);
-}
+}*/
 
 .product.product-single .product-thumb {
     position: relative;
@@ -342,7 +345,7 @@ ul.navbar-nav li a{
 }
 
 .product.product-single:hover .product-thumb:after {
-    opacity: 0.7;
+
     visibility: visible;
 }
 
@@ -365,7 +368,7 @@ ul.navbar-nav li a{
 }
 
 .product.product-single .product-body {
-    padding: 15px;
+    padding: 15px 0px 15px 0px;
 }
 
 .product.product-single .product-price {
@@ -379,6 +382,195 @@ ul.navbar-nav li a{
 
 .product.product-single .product-name {
     font-size: 16px;
+}
+.product.product-single .product-btns {
+    margin-top: 20px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.product.product-single:hover .product-btns {
+    opacity: 1;
+    visibility: visible;
+    text-align: center;
+}
+
+/*-- hot product --*/
+
+.product.product-single.product-hot {
+    border: 2px solid #F8694A;
+}
+
+.product.product-single.product-hot .product-btns {
+    opacity: 1;
+    visibility: visible;
+}
+
+.product.product-single .news-title {
+    font-size: 14px;
+    font-weight: bold;
+}
+.product.product-single .news-desc {
+    font-size: 12px;
+    font-weight: normal;
+}
+/*----------------------------*\
+	Buttons
+\*----------------------------*/
+
+.main-btn, .primary-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: none;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+
+.main-btn, .primary-btn a {
+    color: #ffffff;
+}
+
+.icon-btn.main-btn, .icon-btn.primary-btn {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px;
+    border: none;
+}
+
+.main-btn {
+    color: #30323A;
+    background-color: #FFF;
+    -webkit-box-shadow: 0px 0px 0px 1px #DADADA inset, 0px 0px 0px 6px transparent;
+    box-shadow: 0px 0px 0px 1px #DADADA inset, 0px 0px 0px 6px transparent;
+}
+
+.main-btn:hover, .main-btn:focus {
+    color: #F8694A;
+    -webkit-box-shadow: 0px 0px 0px 1px #F8694A inset, 0px 0px 0px 0px #F8694A;
+    box-shadow: 0px 0px 0px 1px #F8694A inset, 0px 0px 0px 0px #F8694A;
+}
+
+.primary-btn {
+    color: #FFF;
+    background-color: #F8694A;
+}
+
+.primary-btn:hover, .primary-btn:focus {
+    color: #FFF;
+    background-color: #30323A;
+}
+
+/*=========================================================
+	10 -> FOOTER
+===========================================================*/
+
+.footer {
+    margin: 15px 0px;
+}
+
+.footer .footer-header {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    margin-bottom: 30px;
+}
+
+.footer-logo .logo {
+    display: inline-block;
+}
+
+.footer-logo .logo>img {
+    width: 100%;
+    max-height: 70px;
+}
+
+.footer-social>li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 6px;
+}
+
+.footer-social>li:last-child {
+    margin-right: 0px;
+}
+
+.footer-copyright {
+    margin-top: 15px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/*=========================================================
+	11 -> SLICK
+===========================================================*/
+
+/*----------------------------*\
+	Arrows
+\*----------------------------*/
+
+.slick-prev, .slick-next {
+    width: 40px;
+    height: 40px;
+    background: #30323A;
+    z-index: 22;
+}
+
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+    background: #F8694A;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #FFF;
+}
+
+.slick-prev {
+    left: 15px;
+}
+
+.slick-next {
+    right: 15px;
+}
+
+.custom-nav .slick-prev, .custom-nav .slick-next {
+    display: inline-block;
+    position: static;
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px);
+}
+
+/*----------------------------*\
+	Dots
+\*----------------------------*/
+
+.slick-dots li, .slick-dots li button, .slick-dots li button:before {
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li button:before {
+    content: "";
+    opacity: 1;
+    background: #DADADA;
+    border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+    background-color: #F8694A;
+}
+
+.custom-dots .slick-dots {
+    position: static;
+    margin: 15px 0px;
 }
 
 /*=========================================================
