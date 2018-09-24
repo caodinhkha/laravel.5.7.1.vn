@@ -1,13 +1,1 @@
-(function($) {
-    "use strict"
-    // HOME SLICK
-    $('#home-slick').slick({
-        autoplay: true,
-        infinite: true,
-        speed: 300,
-        arrows: true,
-    });
-    $("#to_top").click(function () {
-        $("body,html").animate({scrollTop: 0}, "normal")
-    });
-})(jQuery);
+!function(t){var n={};function e(o){if(n[o])return n[o].exports;var r=n[o]={i:o,l:!1,exports:{}};return t[o].call(r.exports,r,r.exports,e),r.l=!0,r.exports}e.m=t,e.c=n,e.d=function(t,n,o){e.o(t,n)||Object.defineProperty(t,n,{configurable:!1,enumerable:!0,get:o})},e.n=function(t){var n=t&&t.__esModule?function(){return t.default}:function(){return t};return e.d(n,"a",n),n},e.o=function(t,n){return Object.prototype.hasOwnProperty.call(t,n)},e.p="/",e(e.s=52)}({52:function(t,n,e){t.exports=e(53)},53:function(t,n){!function(t){"use strict";t("#home-slick").slick({autoplay:!0,infinite:!0,speed:300,arrows:!0}),t("#to_top").click(function(){t("body,html").animate({scrollTop:0},"normal")})}(jQuery)}});
