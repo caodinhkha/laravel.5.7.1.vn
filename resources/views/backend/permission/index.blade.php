@@ -71,7 +71,7 @@
     </section>
     <!-- /.content -->
     <!-- DataTables -->
-    <script src="{{ asset("/static/AdminLTE-2.4.5/bower_components/datatables.net/js/jquery.dataTables.min.js") }}"></script>
-    <script src="{{ asset("/static/AdminLTE-2.4.5/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js") }}"></script>
+    <script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net/js/jquery.dataTables.min.js") }}"></script>
+    <script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js") }}"></script>
     <script src="{{ asset("/static/backend/js/permission/index.js") }}"></script>
 @endsection

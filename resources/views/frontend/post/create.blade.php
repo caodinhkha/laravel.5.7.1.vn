@@ -139,7 +139,7 @@
     </section><!-- /.content -->
 @endsection
 <!-- ckeditor -->
-<script src="{{ asset("/static/ckeditor4.10.1/ckeditor.js") }}"></script>
+<script src="{{ asset("/static/library/ckeditor4.10.1/ckeditor.js") }}"></script>
 <script>
     CKEDITOR.replace('ckeditor');
 </script>

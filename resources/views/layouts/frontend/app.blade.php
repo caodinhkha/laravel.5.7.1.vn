@@ -9,9 +9,9 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>{{ config('app.name', 'Laravel') }}</title>
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{{ asset("/static/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css") }}">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset("/static/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css") }}">
     <!-- Pushy CSS -->
     <link rel="stylesheet" href="{{ asset("/static/frontend/css/pushy.css") }}">
     <link rel="stylesheet" href="{{ asset("/static/frontend/css/slick.css") }}">
@@ -533,112 +533,113 @@
         </div>
         <!-- /section -->
         <!-- FOOTER -->
-        <footer id="footer" class="section">
-            <!-- container -->
+        <footer>
             <div class="container">
-                <!-- row -->
-                <div class="row section-grey">
-                    <!-- footer widget -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="footer">
-                            <!-- footer logo -->
-                            <div class="footer-logo">
-                                <a class="logo" href="#">
-                                    <img src="./img/logo.png" alt="">
-                                </a>
+                <div class="row footer-content">
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="logo-footer-content"><div id="cmsblock-25" class="cmsblock">
+
+                                <div class="description"><a href="#"><img alt="" src="http://cherrykids.vn/image/catalog/demo/logo-footer.png"></a></div>
                             </div>
-                            <!-- /footer logo -->
-
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
-
-                            <!-- footer social -->
-                            <ul class="footer-social">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                            </ul>
-                            <!-- /footer social -->
+                        </div>
+                        <div class="short_about_us">
+                            <p>Cherry Kids nơi thiên thần nhỏ của bạn lung linh tỏa sáng</p>
+                        </div>
+                        <div class="social-content">
+                            <a href="https://www.facebook.com/Cherry.Bao.Ngoc.Kids"><span class="social-icon"><i class="fa fa-facebook"></i></span></a>
+                            <a href="https://twitter.com/ttsgnews"><span class="social-icon"><i class="fa fa-twitter"></i></span></a>
+                            <a href="https://www.youtube.com/channel/UCUY7Q9JxvQJsBfJZa3tTRJw"><span class="social-icon"><i class="fa fa-youtube"></i></span></a>
+                            <a href="https://plus.google.com/u/0/+ThoitrangsaigonVn"><span class="social-icon"><i class="fa fa-google-plus"></i></span></a>
                         </div>
                     </div>
-                    <!-- /footer widget -->
-
-                    <!-- footer widget -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-header">My Account</h3>
-                            <ul class="list-links">
-                                <li><a href="#">My Account</a></li>
-                                <li><a href="#">My Wishlist</a></li>
-                                <li><a href="#">Compare</a></li>
-                                <li><a href="#">Checkout</a></li>
-                                <li><a href="#">Login</a></li>
-                            </ul>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-static-title"><h5>Thông tin</h5></div>
+                        <ul class="list-unstyled">
+                            <li><a href="http://cherrykids.vn/index.php?route=information/contact">Liên hệ</a></li>
+                            <li><a href="http://cherrykids.vn/gioi-thieu">Giới thiệu</a></li>
+                            <li><a href="http://cherrykids.vn/thong-tin-giao-hang">Thông tin giao hàng</a></li>
+                            <li><a href="http://cherrykids.vn/chinh-sach-bao-mat">Chính sách bảo mật</a></li>
+                            <li><a href="http://cherrykids.vn/dieu-khoan">Điều khoản &amp; điều kiện</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-static-title"><h5>Liên hệ</h5></div>
+                        <div class="list-unstyled contact-us-content">
+                            <div class="contact-list">
+                                <i class="fa fa-map-marker"></i>
+                                <p> <span class="color-title"></span> 506 Nơ Trang Long, Phường 13, Quận Bình Thanh, TP Hồ Chí Minh</p>
+                            </div>
+                            <div class="contact-list">
+                                <i class="fa fa-envelope-o"></i>
+                                <p>
+                                    <span class="color-title">Email : cherrykidsvn@gmail.com</span>
+                                    <br>
+                                    <span class="color-title">Website :  http://cherrykids.vn</span>
+                                </p>
+                            </div>
+                            <div class="contact-list">
+                                <i class="fa fa-phone"></i>
+                                <p>
+                                    <span class="color-title">Phone : 0933566089</span>
+                                    <br>
+                                    <span class="color-title">Fax : 0933566089</span>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <!-- /footer widget -->
+                    <div class="col-md-3 col-sm-6 col-xs-12">
+                        <div class="footer-static-title"><h5>Thư thông báo</h5></div>
+                        <span>Đăng ký nhận thông tin sản phẩm mới &amp; chương trình khuyến mãi của Cherry Kids</span>
+                        <div class="newletter-subscribe">
+                            <div id="boxes" class="newletter-container">
+                                <div style="" id="dialog" class="window">
+                                    <div class="box">
+                                        <!--  <div class="newletter-title"><h2>Newsletter</h2></div> -->
+                                        <div class="box-content newleter-content">
+                                            <!-- <label>Sign Up for Our Newsletter:</label> -->
+                                            <div id="frm_subscribe">
+                                                <form name="subscribe" id="subscribe">
+                                                    <table>
+                                                        <tbody><tr>
+                                                            <td><!-- <span class="required">*</span><span>Email</span> --><input type="text" value="" name="subscribe_email" id="subscribe_email">
+                                                                <input type="hidden" value="" name="subscribe_name" id="subscribe_name"></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <a class="button" onclick="email_subscribe()"><span>Đăng ký</span></a>
 
-                    <div class="clearfix visible-sm visible-xs"></div>
+                                                            </td>
+                                                        </tr>
 
-                    <!-- footer widget -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-header">Customer Service</h3>
-                            <ul class="list-links">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Shiping & Return</a></li>
-                                <li><a href="#">Shiping Guide</a></li>
-                                <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- /footer widget -->
-
-                    <!-- footer subscribe -->
-                    <div class="col-md-3 col-sm-6 col-xs-6">
-                        <div class="footer">
-                            <h3 class="footer-header">Stay Connected</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-                            <form>
-                                <div class="form-group">
-                                    <input class="input" placeholder="Enter Email Address">
+                                                        </tbody></table>
+                                                </form>
+                                            </div><!-- /#frm_subscribe -->
+                                            <div id="notification"></div>
+                                        </div><!-- /.box-content -->
+                                    </div>
                                 </div>
-                                <button class="primary-btn">Join Newslatter</button>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- /footer subscribe -->
-                </div>
-                <!-- /row -->
-                <hr>
-                <!-- row -->
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2 text-center">
-                        <!-- footer copyright -->
-                        <div class="footer-copyright">
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        </div>
-                        <!-- /footer copyright -->
+                                <div style="width: 2000px;top:-808px; height: 2000px; display: none; opacity: 0.7;" id="mask"> </div>
+                            </div>
+                        </div><!-- /.box -->
                     </div>
                 </div>
-                <!-- /row -->
             </div>
-            <!-- /container -->
+            <div class="container text-powered">
+                Bản quyền của Cherry Kids © 2018 thiết kế bởi <a href="https://www.facebook.com/phongtx">PhongTX</a>
+            </div>
         </footer>
         <!-- /FOOTER -->
     </div>
+    <a id="to_top" href="javascript:;" style="display: inline;"><i class="fa fa-angle-up"></i></a>
 </body>
 <!-- jQuery 3 -->
-<script src="{{ asset("/static/AdminLTE-2.4.5/bower_components/jquery/dist/jquery.min.js") }}"></script>
+<script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/jquery/dist/jquery.min.js") }}"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{ asset("/static/AdminLTE-2.4.5/bower_components/bootstrap/dist/js/bootstrap.min.js") }}"></script>
+<script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/bootstrap/dist/js/bootstrap.min.js") }}"></script>
 <!--pushy.js-->
 <script src="{{ asset("/static/frontend/js/pushy.js") }}"></script>
 <!--slick.min.js-->
 <script src="{{ asset("/static/frontend/js/slick.min.js") }}"></script>
 <!--index.js-->
-<script src="{{ asset("/static/frontend/js/index.js") }}"></script>
+<script src="{{ asset("/static/frontend/js/main.js") }}"></script>
 </html>

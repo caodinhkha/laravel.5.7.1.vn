@@ -141,6 +141,10 @@ ul.navbar-nav li a{
     #home-slick {
         margin-top: 15px;
     }
+    .footer-static-title {
+        margin: 30px 0px;
+    }
+    .text-powered{text-align: center;}
 }
 /*Desktop*/
 @media (min-width: 769px) {
@@ -605,4 +609,178 @@ ul.navbar-nav li a{
     [class*='col-xs'] {
         width: 100%;
     }
+}
+
+/* footer */
+footer {
+    margin-top: 0px;
+    color: #e2e2e2;
+}
+footer .footer-content {
+    background-color: #000;
+    padding: 50px 0px 10px 0;
+}
+footer p,footer span{color: #a7a7a7;}
+footer hr {
+    border-top: none;
+    border-bottom: 1px solid #666;
+}
+footer .logo-footer-content {
+    margin-bottom: 15px;
+}
+.social-content {
+    margin: 30px 0px;
+}
+span.social-icon i{
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #a7a7a7;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out 0s;
+    -webkit-transition: 0.3s ease-in-out 0s;
+}
+span.social-icon:hover i{
+    background: #a7a7a7;
+    color: #fff;
+}
+footer .short_about_us{line-height: 25px;}
+footer a {
+    color: #ccc;
+}
+footer a:hover {
+    color: #fff;
+}
+.footer-static-title {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+}
+footer h5 {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    display: inline;
+    padding-right: 20px;
+    color: #fff;
+}
+footer .footer-content ul li {
+    border-bottom: 1px solid #313131;
+}
+
+footer .footer-content ul li a {
+    position: relative;
+    font-size: 11px;
+    color: #a7a7a7;
+    padding: 8px 0;
+    z-index: 10;
+    width: 100%;
+    display: block;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-transition: all 0.3s ease-in-out 0s;
+}
+footer .footer-content ul li a:before,.footer-links ul li a:before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    background: #a7a7a7;
+    border-radius: 100%;
+    display: inline-block;
+    margin-right: 25px;
+}
+footer .footer-content ul li a:after {
+    content: "";
+    width: 0;
+    height: 36px;
+    background: #252525;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+footer .footer-content ul li:hover {
+    border-bottom-color: #252525;
+}
+footer .footer-content ul li:hover a {
+    color: #fff;
+    padding-left: 15px;
+}
+footer .footer-content ul li:hover a:after {
+    width: 100%;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+    transition: all 500ms ease-out;
+    z-index: -1;
+}
+footer .footer-content .contact-us-content { display: inline-block; width: 100%; }
+footer .footer-content .contact-us-content .contact-list{
+    border:none !important;
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    list-style: none;
+}
+footer .footer-content .contact-us-content .contact-list .fa{
+    height: 40px;
+    width: 40px;
+    border:2px solid #ccc;
+    border-radius:100%;
+    line-height: 36px;
+    text-align: center;
+    float: left;
+}
+footer .footer-content .contact-us-content .contact-list p { margin-left: 55px; list-style: none; }
+
+/* newsletter */
+form#subscribe table {
+    width: 100%;
+    position: relative;
+}
+input#subscribe_email {
+    margin: 15px 0;
+    padding: 5px 85px 5px 10px;
+    width: 100%;
+    border: none;
+    background: #252525;
+    height: 34px;
+}
+form#subscribe a.button span{
+    position: absolute;
+    bottom: 15px;
+    right: 0;
+    background: #464646;
+    cursor: pointer;
+    color: #eee;
+    padding: 7px 10px;
+}
+form#subscribe a.button:hover span{
+    background: #73c7d1;
+    color: #000;
+}
+.text-powered{
+    color: #e2e2e2;
+    background-color: #000;
+    border-top: 1px solid #313131;
+    padding: 30px 15px 30px 15px;
+    text-align: left;
+}
+.text-powered a {
+    color: #00bff3;
+}
+#to_top {
+    background-color: #d71450;
+    border: 1px solid #fff;
+    bottom: 10px;
+    color: #fff !important;
+    cursor: pointer;
+    height: 35px;
+    line-height: 32px;
+    position: fixed;
+    right: 10px;
+    text-align: center;
+    width: 35px;
+    z-index: 9999;
 }
