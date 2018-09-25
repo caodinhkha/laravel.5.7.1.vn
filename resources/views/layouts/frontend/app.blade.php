@@ -474,7 +474,7 @@
         <!-- section -->
         <div class="section">
             <!-- container -->
-            <div class="container">
+            <div class="news container">
                 <!-- row -->
                 <div class="row">
                     <!-- section title -->
@@ -572,17 +572,17 @@
                             <div class="contact-list">
                                 <i class="fa fa-envelope-o"></i>
                                 <p>
-                                    <span class="color-title">Email : cherrykidsvn@gmail.com</span>
+                                    <span class="color-title">Email: cherrykidsvn@gmail.com</span>
                                     <br>
-                                    <span class="color-title">Website :  http://cherrykids.vn</span>
+                                    <span class="color-title">Website:  http://cherrykids.vn</span>
                                 </p>
                             </div>
                             <div class="contact-list">
                                 <i class="fa fa-phone"></i>
                                 <p>
-                                    <span class="color-title">Phone : 0933566089</span>
+                                    <span class="color-title">Phone: 0933566089</span>
                                     <br>
-                                    <span class="color-title">Fax : 0933566089</span>
+                                    <span class="color-title">Fax: 0933566089</span>
                                 </p>
                             </div>
                         </div>
@@ -610,8 +610,8 @@
 
                                                             </td>
                                                         </tr>
-
-                                                        </tbody></table>
+                                                        </tbody>
+                                                    </table>
                                                 </form>
                                             </div><!-- /#frm_subscribe -->
                                             <div id="notification"></div>
@@ -625,7 +625,7 @@
                 </div>
             </div>
             <div class="container text-powered">
-                Bản quyền của Cherry Kids © 2018 thiết kế bởi <a href="https://www.facebook.com/phongtx">PhongTX</a>
+                Copyright @ 2018 by <a href="https://www.facebook.com/phongtx">PhongTX</a>
             </div>
         </footer>
         <!-- /FOOTER -->
