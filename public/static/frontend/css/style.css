@@ -7,6 +7,7 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     overflow-y: auto;
+    background: #282828;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -126,6 +127,16 @@ ul.navbar-nav li a{
     position: relative;
     width: 100%;
 }
+.container {
+    background: #eaeaea;
+}
+.bg-red {
+    background: #e23d3d;
+}
+.bg-payment {
+    background: #e23d3d;
+    padding-bottom: 30px;
+}
 /* Mobile and tablet */
 @media (min-width: 320px) and (max-width:768px) {
     .desktop-menu {
@@ -152,6 +163,33 @@ ul.navbar-nav li a{
         background: #000;
         padding: 10px 0px 10px 0;
     }
+    .bg-payment h1{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #fff;
+        line-height: 100px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        border-bottom: solid #fff 1px;
+        text-align: center;
+    }
+    .bg-payment h1 a {
+        color: #fff;
+    }
+    .one {
+        background: #e23d3d url("../img/icon_payment.png") 20px center no-repeat;
+    }
+    .two {
+        background: #e23d3d url("../img/icon_shipping.png") 20px center no-repeat;
+    }
+    .three {
+        background: #e23d3d url("../img/icon_investment.png") 10px center no-repeat;
+    }
+    .bg-payment .content {
+        padding-top: 20px;
+        text-align: justify;
+        color: #fff;
+    }
 }
 /*Desktop*/
 @media (min-width: 769px) {
@@ -172,11 +210,41 @@ ul.navbar-nav li a{
     .container {
         width: 1366px !important;
     }
+    .banner-content {
+        padding: 0px !important;
+        width: 1366px !important;
+    }
     footer .footer-content {
-        background-color: #000;
         background: #000 url("../img/bg_footer.png") center center no-repeat;
         padding: 200px 0px 10px 0;
         height: 583px;
+    }
+    .bg-payment h1{
+        margin-top: 10px;
+        font-size: 12px;
+        color: #fff;
+        line-height: 100px;
+        text-transform: uppercase;
+        margin-bottom: 0px;
+        border-bottom: solid #fff 1px;
+        text-align: center;
+    }
+    .bg-payment h1 a {
+        color: #fff;
+    }
+    .one {
+        background: #e23d3d url("../img/icon_payment.png") 70px center no-repeat;
+    }
+    .two {
+        background: #e23d3d url("../img/icon_shipping.png") 70px center no-repeat;
+    }
+    .three {
+        background: #e23d3d url("../img/icon_investment.png") 60px center no-repeat;
+    }
+    .bg-payment .content {
+        padding-top: 20px;
+        text-align: justify;
+        color: #fff;
     }
 }
 /*=========================================================
@@ -434,6 +502,9 @@ ul.navbar-nav li a{
 }
 .product.product-single .news-title a {
     color: #fff;
+}
+.product.product-single .news-title a:hover {
+    color: #e23d3d;
 }
 .product.product-single .news-desc {
     font-size: 12px;

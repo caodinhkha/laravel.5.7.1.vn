@@ -70,7 +70,7 @@
 
         <!-- section -->
         <div class="section desktop-menu">
-            <div class="container">
+            <div class="container banner-content">
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <!--<li><a class="title_mobile_700_18 clshome" href="http://thoitrangsaigon.vn" title="Trang chủ"><i class="fa fa-2x fa-home home" aria-hidden="true"></i></a></li>-->
@@ -104,7 +104,7 @@
 
         <!-- section -->
         <div class="section content-wrapper">
-            <div class="container">
+            <div class="container banner-content">
                 <!-- home slick -->
                 <div id="home-slick">
                     <!-- banner -->
@@ -285,6 +285,20 @@
             <div class="container">
                 <!-- row -->
                 <div class="row">
+                    <img width="100%" src="{{ asset("/static/frontend/img/bg_banner.png") }}" alt="">
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /section -->
+
+        <!-- section -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
                     <!-- section title -->
                     <div class="col-md-12">
                         <div class="section-title">
@@ -368,6 +382,39 @@
                         </div>
                     </div>
                     <!-- /Product Single -->
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /section -->
+
+        <!-- section -->
+        <div class="section">
+            <!-- container -->
+            <div class="container bg-payment">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-6 bg-one">
+                        <h1 class="one"><a href="">Thanh toán khi nhận hàng</a></h1>
+                        <div class="content">
+                            Quý khách có thể thanh toán tiền mặt trực tiếp khi mua hàng tại cửa hàng, chuyển khoản, hoặc thanh toán cho nhân viên chuyển phát đối với hình thức chuyển phát COD khi mua hàng trực tuyến qua website www.saigonfashion.net
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6 bg-two">
+                        <h1 class="two"><a href="">Giao hàng toàn quốc</a></h1>
+                        <div class="content">
+                            Thời Trang Sài Gòn hỗ trợ phương thức giao hàng và thu tiền tận nơi trên toàn quốc, trừ một số trường hợp đặc biệt như sau:<br>
+                            1. Đối với khách hàng ở TPHCM: Trường hợp khách hàng muốn mua sỉ, phải thanh toán 100% tiền hàng trước.<br>
+                            2. Đối với khách hàng ở tỉnh thành khác:<br>
+                            - Khách hàng mua sỉ sản phẩm, phải chuyển khoảng 100% tiền hàng + phí vận chuyển.<br>
+                            - Khách hàng ở các vùng xa xôi, hải đảo, nhân viên Bưu Điện không thể phát tận nơi, vui lòng đến địa chỉ Bưu Điện được thông báo để nhận hàng.
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6 bg-three">
+                        <h1 class="three"><a href="">Đổi trả trong vòng 7 ngày</a></h1>
+                        <div class="content">Điều kiện về thời gian đổi trả: trong vòng 7 ngày kể từ khi nhận được hàng.</div>
+                    </div>
                 </div>
                 <!-- /row -->
             </div>
@@ -484,6 +531,48 @@
                         </div>
                     </div>
                     <!-- section title -->
+
+                    <!-- Product Single -->
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="product product-single">
+                            <div class="product-thumb">
+                                <img src="http://thoitrangsaigon.vn/static/uploads/thumbnails/thumbs/2018/05/dam-so-mi-kieu-cach-cho-nang-yeu-ve-dep-co-dien-1527471275_490x294.jpg" alt="">
+                            </div>
+                            <div class="product-body">
+                                <h1 class="news-title"><a href="#">Đầm sơ mi kiểu cách cho nàng yêu vẻ đẹp cổ điển</a></h1>
+                                <h2 class="news-desc">Từ hình ảnh thanh nhã của mẫu đầm sơ mi, nhà thiết kế Nguyễn Hà Nhật Huy đã mang tới bộ sưu tập váy đi tiệc nhẹ mùa hè 2018.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Product Single -->
+
+                    <!-- Product Single -->
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="product product-single">
+                            <div class="product-thumb">
+                                <img src="http://thoitrangsaigon.vn/static/uploads/thumbnails/thumbs/2018/05/dam-so-mi-kieu-cach-cho-nang-yeu-ve-dep-co-dien-1527471275_490x294.jpg" alt="">
+                            </div>
+                            <div class="product-body">
+                                <h1 class="news-title"><a href="#">Đầm sơ mi kiểu cách cho nàng yêu vẻ đẹp cổ điển</a></h1>
+                                <h2 class="news-desc">Từ hình ảnh thanh nhã của mẫu đầm sơ mi, nhà thiết kế Nguyễn Hà Nhật Huy đã mang tới bộ sưu tập váy đi tiệc nhẹ mùa hè 2018.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Product Single -->
+
+                    <!-- Product Single -->
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="product product-single">
+                            <div class="product-thumb">
+                                <img src="http://thoitrangsaigon.vn/static/uploads/thumbnails/thumbs/2018/05/dam-so-mi-kieu-cach-cho-nang-yeu-ve-dep-co-dien-1527471275_490x294.jpg" alt="">
+                            </div>
+                            <div class="product-body">
+                                <h1 class="news-title"><a href="#">Đầm sơ mi kiểu cách cho nàng yêu vẻ đẹp cổ điển</a></h1>
+                                <h2 class="news-desc">Từ hình ảnh thanh nhã của mẫu đầm sơ mi, nhà thiết kế Nguyễn Hà Nhật Huy đã mang tới bộ sưu tập váy đi tiệc nhẹ mùa hè 2018.</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Product Single -->
 
                     <!-- Product Single -->
                     <div class="col-md-4 col-sm-6 col-xs-6">
