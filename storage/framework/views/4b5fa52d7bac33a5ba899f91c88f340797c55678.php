@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="<?php echo e(str_replace('_', '-', app()->getLocale())); ?>">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <!-- CSRF Token -->
-    <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
+    <title><?php echo e(config('app.name', 'Laravel')); ?></title>
     <!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/bootstrap/dist/css/bootstrap.min.css")); ?>">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css") }}">
+    <link rel="stylesheet" href="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/font-awesome/css/font-awesome.min.css")); ?>">
     <!-- Pushy CSS -->
-    <link rel="stylesheet" href="{{ asset("/static/frontend/css/pushy.css") }}">
-    <link rel="stylesheet" href="{{ asset("/static/frontend/css/slick.css") }}">
-    <link rel="stylesheet" href="{{ asset("/static/frontend/css/slick-theme.css") }}">
-    <link rel="stylesheet" href="{{ asset("/static/frontend/css/style.css") }}">
+    <link rel="stylesheet" href="<?php echo e(asset("/static/frontend/css/pushy.css")); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset("/static/frontend/css/slick.css")); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset("/static/frontend/css/slick-theme.css")); ?>">
+    <link rel="stylesheet" href="<?php echo e(asset("/static/frontend/css/style.css")); ?>">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -109,7 +109,7 @@
                 <div id="home-slick">
                     <!-- banner -->
                     <div class="banner banner-1">
-                        <img src="{{ asset("/static/frontend/img/banner01.jpg") }}" alt="">
+                        <img src="<?php echo e(asset("/static/frontend/img/banner01.jpg")); ?>" alt="">
                         <!--<div class="banner-caption text-center">
                             <h1 class="primary-color">Bags sale</h1>
                             <h3 class="white-color font-weak">Up to 50% Discount</h3>
@@ -118,7 +118,7 @@
                     <!-- /banner -->
                     <!-- banner -->
                     <div class="banner banner-1">
-                        <img src="{{ asset("/static/frontend/img/banner02.jpg") }}" alt="">
+                        <img src="<?php echo e(asset("/static/frontend/img/banner02.jpg")); ?>" alt="">
                         <!--<div class="banner-caption">
                             <h1 class="primary-color">HOT DEAL<br><span class="white-color font-weak">Up to 50% OFF</span></h1>
                         </div>-->
@@ -126,7 +126,7 @@
                     <!-- /banner -->
                     <!-- banner -->
                     <div class="banner banner-1">
-                        <img src="{{ asset("/static/frontend/img/banner03.jpg") }}" alt="">
+                        <img src="<?php echo e(asset("/static/frontend/img/banner03.jpg")); ?>" alt="">
                         <!--<div class="banner-caption">
                             <h1 class="primary-color">New Product <span>Collection</span></h1>
                         </div>-->
@@ -147,7 +147,7 @@
                     <!-- banner -->
                     <div class="col-md-8">
                         <div class="banner banner-1">
-                            <img src="{{ asset("/static/frontend/img/banner13.jpg") }}" alt="">
+                            <img src="<?php echo e(asset("/static/frontend/img/banner13.jpg")); ?>" alt="">
                             <div class="banner-caption text-center">
                                 <h1 class="primary-color">THỜI TRANG NỮ<br><span class="white-color font-weak">Up to 50% OFF</span></h1>
                                 <button class="primary-btn">Shop Now</button>
@@ -159,7 +159,7 @@
                     <!-- banner -->
                     <div class="col-md-4 col-sm-6">
                         <a class="banner banner-1" href="#">
-                            <img src="{{ asset("/static/frontend/img/banner11.jpg") }}" alt="">
+                            <img src="<?php echo e(asset("/static/frontend/img/banner11.jpg")); ?>" alt="">
                             <div class="banner-caption text-center">
                                 <h2 class="primary-color">THỜI TRANG NAM</h2>
                                 <button class="primary-btn">Shop Now</button>
@@ -171,7 +171,7 @@
                     <!-- banner -->
                     <div class="col-md-4 col-sm-6">
                         <a class="banner banner-1" href="#">
-                            <img src="{{ asset("/static/frontend/img/banner12.jpg") }}" alt="">
+                            <img src="<?php echo e(asset("/static/frontend/img/banner12.jpg")); ?>" alt="">
                             <div class="banner-caption text-center">
                                 <h2 class="primary-color">KHUYẾN MÃI</h2>
                                 <button class="primary-btn">Shop Now</button>
@@ -204,7 +204,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product01.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product01.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="primary-btn add-to-cart btn-first"><a href=""><i class="fa fa-shopping-cart"></i> Mua hàng</button></a>
                                     <button class="primary-btn add-to-cart"><a href=""><i class="fa fa fa-info"></i> Xem chi tiết</button></a>
@@ -222,7 +222,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product02.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product02.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -241,7 +241,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product03.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product03.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -260,7 +260,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product04.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product04.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -287,7 +287,7 @@
             <div class="container">
                 <!-- row -->
                 <div class="row">
-                    <img width="100%" src="{{ asset("/static/frontend/img/bg_banner.png") }}" alt="">
+                    <img width="100%" src="<?php echo e(asset("/static/frontend/img/bg_banner.png")); ?>" alt="">
                 </div>
                 <!-- /row -->
             </div>
@@ -313,7 +313,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product01.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product01.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -332,7 +332,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product02.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product02.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -351,7 +351,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product03.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product03.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -370,7 +370,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product04.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product04.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -438,7 +438,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product01.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product01.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -457,7 +457,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product02.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product02.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -476,7 +476,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product03.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product03.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -495,7 +495,7 @@
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="product product-single">
                             <div class="product-thumb">
-                                <img src="{{ asset("/static/frontend/img/product04.jpg") }}" alt="">
+                                <img src="<?php echo e(asset("/static/frontend/img/product04.jpg")); ?>" alt="">
                                 <div class="product-btns">
                                     <button class="main-btn icon-btn"><i class="fa fa-heart"></i></button>
                                     <button class="main-btn icon-btn"><i class="fa fa-exchange"></i></button>
@@ -625,7 +625,7 @@
                 <div class="row footer-content">
                     <div class="col-md-3 col-sm-6 col-xs-12">
                         <div class="logo-footer-content"><div id="cmsblock-25" class="cmsblock">
-                                <div class="description"><a href="#"><img alt="" src="{{ asset("/static/frontend/img/desktop_logo.png") }}"></a></div>
+                                <div class="description"><a href="#"><img alt="" src="<?php echo e(asset("/static/frontend/img/desktop_logo.png")); ?>"></a></div>
                             </div>
                         </div>
                         <div class="short_about_us">
@@ -722,13 +722,13 @@
     <a id="to_top" href="javascript:;" style="display: inline;"><i class="fa fa-angle-up"></i></a>
 </body>
 <!-- jQuery 3 -->
-<script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/jquery/dist/jquery.min.js") }}"></script>
+<script src="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/jquery/dist/jquery.min.js")); ?>"></script>
 <!-- Bootstrap 3.3.7 -->
-<script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/bootstrap/dist/js/bootstrap.min.js") }}"></script>
+<script src="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/bootstrap/dist/js/bootstrap.min.js")); ?>"></script>
 <!--pushy.js-->
-<script src="{{ asset("/static/frontend/js/pushy.js") }}"></script>
+<script src="<?php echo e(asset("/static/frontend/js/pushy.js")); ?>"></script>
 <!--slick.min.js-->
-<script src="{{ asset("/static/frontend/js/slick.min.js") }}"></script>
+<script src="<?php echo e(asset("/static/frontend/js/slick.min.js")); ?>"></script>
 <!--index.js-->
-<script src="{{ asset("/static/frontend/js/main.js") }}"></script>
+<script src="<?php echo e(asset("/static/frontend/js/main.js")); ?>"></script>
 </html>

@@ -1,7 +1,6 @@
 {
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css",
-    "/static/frontend/css/style.css": "/static/frontend/css/style.css",
     "/static/frontend/js/main.js": "/static/frontend/js/main.js",
     "/static/backend/js/user/index.js": "/static/backend/js/user/index.js",
     "/static/backend/js/role/index.js": "/static/backend/js/role/index.js",

@@ -16,5 +16,5 @@ mix.js('resources/js/backend/permission/index.js', 'public/static/backend/js/per
 mix.js('resources/js/backend/post/index.js', 'public/static/backend/js/post');
 mix.js('resources/js/backend/role/index.js', 'public/static/backend/js/role');
 mix.js('resources/js/backend/user/index.js', 'public/static/backend/js/user');
-mix.js('resources/js/frontend/main.js', 'public/static/frontend/js').sass('resources/sass/frontend/style.scss', 'public/static/frontend/css');
+mix.js('resources/js/frontend/main.js', 'public/static/frontend/js');
 mix.copyDirectory('resources/img/frontend', 'public/static/frontend/img');
