@@ -67,9 +67,14 @@
         <!-- /.row -->
     </section>
     <!-- /.content -->
-    <!-- DataTables -->
-    <script src="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net/js/jquery.dataTables.min.js")); ?>"></script>
-    <script src="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js")); ?>"></script>
-    <script src="<?php echo e(asset("/static/backend/js/user/index.js")); ?>"></script>
+    <div class="modal fade" id="modal-add" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <script src="<?php echo e(asset("/static/backend/js/category/index.js")); ?>"></script>
 <?php $__env->stopSection(); ?>
 <?php echo $__env->make('layouts.backend.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

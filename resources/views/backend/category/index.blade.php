@@ -68,8 +68,13 @@
         <!-- /.row -->
     </section>
     <!-- /.content -->
-    <!-- DataTables -->
-    <script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net/js/jquery.dataTables.min.js") }}"></script>
-    <script src="{{ asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js") }}"></script>
-    <script src="{{ asset("/static/backend/js/user/index.js") }}"></script>
+    <div class="modal fade" id="modal-add" role="dialog" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <script src="{{ asset("/static/backend/js/category/index.js") }}"></script>
 @endsection

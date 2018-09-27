@@ -9,14 +9,6 @@ use App\Models\Post;
 class PostController extends Controller
 {
     /**
-     * UserController constructor.
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
-    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
