@@ -14,8 +14,9 @@ class CategoryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($type)
     {
+        echo $type;die;
         $categories = Category::all();
         Category::recursive($categories, 'id', 0, 0, $arrResult);
         return view('backend.category.index')->with('categories', $arrResult);
@@ -56,12 +57,12 @@ class CategoryController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Category  $category
+     * @param  \App\Category  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Category $category)
+    public function edit($id)
     {
-        $categories = Category::find($category);
+        $categories = Category::find($id);
         return view('backend.category.create')->with('categories', $categories);
     }
 

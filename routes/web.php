@@ -30,6 +30,9 @@ Route::group(config('module.backend.route'),function(){
     Route::resource('users', 'UserController');
     Route::resource('roles', 'RoleController');
     Route::resource('permissions','PermissionController');
-    Route::resource('categories','CategoryController');
+    //Route::resource('categories','CategoryController');
     Route::resource('posts', 'PostController');
+    Route::get('/categories/index/{type}', ['as' => 'index', 'uses' => 'CategoryController@index']);
+    Route::get('/categories/create/{type}', ['as' => 'create', 'uses' => 'CategoryController@create']);
+    Route::get('/categories/edit/{id}', ['as' => 'edit', 'uses' => 'CategoryController@edit']);
 });
