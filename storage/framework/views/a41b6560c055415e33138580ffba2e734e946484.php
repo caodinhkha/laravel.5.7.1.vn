@@ -1,0 +1,75 @@
+<?php $__env->startSection('title', '| Category Management'); ?>
+<?php $__env->startSection('content'); ?>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Dashboard
+            <small>Control panel</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li class="active">Dashboard</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-primary">
+                    <div class="box-header">
+                        <h3 class="box-title">Danh mục</h3>
+
+                        <div class="box-tools pull-right">
+                            <a href="javascript:;" class="btn btn-add act-add btn-block btn-primary btn-sm" data-id="0" data-type=""
+                               data-toggle="modal" data-target="#modal-add">Tạo mới</a>
+                        </div>
+                    </div>
+                    <?php
+                    if(isset($categories) && !empty($categories)){
+                    ?>
+                    <div class="box-body table-responsive no-padding">
+                        <table class="table table-bordered table-striped">
+                            <tbody>
+                            <tr>
+                                <th class="txt-id text-center">ID</th>
+                                <th>Tên</th>
+                                <th class="txt-id text-center">Thứ tự</th>
+                                <th class="txt-action text-center text-nowrap">Thao tác</th>
+                            </tr>
+
+                            <?php
+                            foreach ($categories as $val) {
+                                $numRepeat = $val['level'];
+                                $char = '';
+                                if ($numRepeat > 0) {
+                                    $char .= str_repeat('-----', $numRepeat);
+                                }
+                                echo '<tr><td class="text-center">'.$val['id'].'</td><td><a href="javascript:;" class="tooltips act-add" data-toggle="tooltip" data-id="' . $val['id'] . '" data-type="" data-toggle="modal" data-target="#modal-add" data-original-title="Edit">'.$char . ' ' . $val['name'].'</a></td><td class="text-center">'.$val['display_order'].'</td><td class="text-center"><a class="tooltips act-add" data-toggle="tooltip" data-id="' . $val['id'] . '" data-type="" data-toggle="modal" data-target="#modal-add" href="javascript:;" data-original-title="Edit"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;&nbsp;<a class="tooltips act-update-status" data-id="'.$val['id'].'" data-name="'.$val['name'].'" data-status="'.$val['status'].'" href="javascript:;" data-toggle="tooltip" data-original-title="'.($val['status']==1?"Inactive":"Active").'"><i class="fa '.($val['status']==1?"fa-lock":"fa-unlock").'"></i></a>&nbsp;&nbsp;&nbsp;<a class="tooltips act-del" data-id="'.$val['id'].'" data-name="'.$val['name'].'" href="javascript:;" data-toggle="tooltip" data-original-title="Delete"><i class="fa fa-trash-o"></i></a></td></tr>';
+                            }
+                            ?>
+                            </tbody>
+                        </table>
+                    </div>
+                    <?php
+                    }else{
+                    ?>
+                    <div class="box-body">
+                        <div class="alert alert-warning p-b-10" role="alert">Không tìm thấy dữ liêu!</div>
+                    </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+                <!-- /.box -->
+            </div>
+        </div>
+        <!-- /.row -->
+    </section>
+    <!-- /.content -->
+    <!-- DataTables -->
+    <script src="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net/js/jquery.dataTables.min.js")); ?>"></script>
+    <script src="<?php echo e(asset("/static/library/AdminLTE-2.4.5/bower_components/datatables.net-bs/js/dataTables.bootstrap.min.js")); ?>"></script>
+    <script src="<?php echo e(asset("/static/backend/js/user/index.js")); ?>"></script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.backend.app', \Illuminate\Support\Arr::except(get_defined_vars(), array('__data', '__path')))->render(); ?>

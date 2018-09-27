@@ -29,6 +29,7 @@ Route::group(config('module.backend.route'),function(){
     Route::get('/','IndexController@index');
     Route::resource('users', 'UserController');
     Route::resource('roles', 'RoleController');
-    Route::resource('posts', 'PostController');
     Route::resource('permissions','PermissionController');
+    Route::resource('categories','CategoryController');
+    Route::resource('posts', 'PostController');
 });

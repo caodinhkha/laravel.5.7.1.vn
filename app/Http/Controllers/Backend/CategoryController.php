@@ -15,7 +15,9 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = Category::all();
+        Category::recursive($categories, 'id', 0, 0, $arrResult);
+        return view('backend.category.index')->with('categories', $arrResult);
     }
 
     /**
@@ -58,7 +60,8 @@ class CategoryController extends Controller
      */
     public function edit(Category $category)
     {
-        //
+        $categories = Category::find($category);
+        return view('backend.category.create')->with('categories', $categories);
     }
 
     /**
