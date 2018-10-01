@@ -4,10 +4,25 @@ namespace App\Http\Controllers\Backend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Models\Post;
+use App\Repositories\Post\PostRepositoryInterface;
+//use App\Models\Post;
 
 class PostController extends Controller
 {
+    /**
+     * @var PostRepositoryInterface|\App\Repositories\Post\PostRepositoryInterface
+     */
+    protected $postRepository;
+
+    /**
+     * UserController constructor.
+     */
+    public function __construct(PostRepositoryInterface $postRepository)
+    {
+        $this->middleware('auth');
+        $this->postRepository = $postRepository;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +30,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::latest()->paginate();
+        $posts = $this->postRepository->getAll();
         return view('frontend.post.index', compact('posts'));
     }
 
@@ -37,7 +52,10 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        //Validation here
+        $posts = $this->postRepository->create($data);
+        return view('frontend.post.show', compact('posts'));
     }
 
     /**
@@ -48,7 +66,8 @@ class PostController extends Controller
      */
     public function show($id)
     {
-        //
+        $posts = $this->postRepository->find($id);
+        return view('frontend.post.show', compact('posts'));
     }
 
     /**
